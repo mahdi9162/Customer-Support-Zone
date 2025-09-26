@@ -2,127 +2,127 @@
   {
     "id": 1001,
     "title": "Login Issues - Can't Access Account",
-    "description": "Customer tried multiple password resets but still can't log in.",
-    "status": "Open",
+    "description": "Customer has repeatedly tried to log in but the system keeps rejecting the credentials. Password reset attempts have also failed, leaving the account inaccessible.",
+    "customer": "John Smith",
     "priority": "HIGH PRIORITY",
-    "assignee": "John Smith",
-    "date": "01/15/2024"
+    "status": "Open",
+    "createdAt": "2024-01-15"
   },
   {
     "id": 1002,
     "title": "Payment Failed - Card Declined",
-    "description": "Payment via Visa ending 1234 keeps failing despite sufficient balance.",
-    "status": "Open",
+    "description": "Payment using Visa ending 1234 fails every time despite having sufficient balance. The customer is unable to complete checkout due to repeated decline errors.",
+    "customer": "Sarah Johnson",
     "priority": "HIGH PRIORITY",
-    "assignee": "Sarah Johnson",
-    "date": "01/16/2024"
+    "status": "Open",
+    "createdAt": "2024-01-16"
   },
   {
     "id": 1003,
     "title": "Unable to Download Invoice",
-    "description": "Download button is visible but clicking does nothing on billing page.",
-    "status": "In-Progress",
+    "description": "When the user clicks on the 'Download Invoice' button nothing happens on the billing page. This is preventing them from saving official copies for their records.",
+    "customer": "Michael Brown",
     "priority": "MEDIUM PRIORITY",
-    "assignee": "Michael Brown",
-    "date": "01/17/2024"
+    "status": "In-Progress",
+    "createdAt": "2024-01-17"
   },
   {
     "id": 1004,
     "title": "Incorrect Billing Address",
-    "description": "Updated address not reflected on invoices; still shows old address.",
-    "status": "Open",
+    "description": "Even after updating the billing address in the profile, invoices are still being generated with the old address. This mismatch is creating confusion during audits.",
+    "customer": "Emily Davis",
     "priority": "LOW PRIORITY",
-    "assignee": "Emily Davis",
-    "date": "01/18/2024"
+    "status": "Open",
+    "createdAt": "2024-01-18"
   },
   {
     "id": 1005,
     "title": "App Crash on Launch",
-    "description": "Mobile app crashes immediately after opening on Android 13.",
-    "status": "Open",
+    "description": "The mobile app crashes immediately upon opening on Android 13 devices. Users are unable to access any features or submit feedback through the app.",
+    "customer": "David Wilson",
     "priority": "HIGH PRIORITY",
-    "assignee": "David Wilson",
-    "date": "01/19/2024"
+    "status": "Open",
+    "createdAt": "2024-01-19"
   },
   {
     "id": 1006,
     "title": "Refund Not Processed",
-    "description": "Refund requested two weeks ago but amount not received yet.",
-    "status": "In-Progress",
+    "description": "Customer requested a refund two weeks ago but has not received the amount yet. Multiple follow-ups through email have also gone unanswered.",
+    "customer": "Sophia Taylor",
     "priority": "MEDIUM PRIORITY",
-    "assignee": "Sophia Taylor",
-    "date": "01/20/2024"
+    "status": "In-Progress",
+    "createdAt": "2024-01-20"
   },
   {
     "id": 1007,
     "title": "Two-Factor Authentication Issue",
-    "description": "User not receiving 2FA codes on registered phone number.",
-    "status": "Open",
+    "description": "User is not receiving 2FA codes on their registered phone number which is blocking account access. Attempts to resend codes have also failed.",
+    "customer": "James Anderson",
     "priority": "HIGH PRIORITY",
-    "assignee": "James Anderson",
-    "date": "01/21/2024"
+    "status": "Open",
+    "createdAt": "2024-01-21"
   },
   {
     "id": 1008,
     "title": "Unable to Update Profile Picture",
-    "description": "Upload shows 'failed' error on large images; smaller ones also fail.",
-    "status": "Open",
+    "description": "Uploading a new profile picture returns a 'failed' error for both small and large files. The current image remains unchanged despite multiple attempts.",
+    "customer": "Olivia Martinez",
     "priority": "LOW PRIORITY",
-    "assignee": "Olivia Martinez",
-    "date": "01/22/2024"
+    "status": "Open",
+    "createdAt": "2024-01-22"
   },
   {
     "id": 1009,
     "title": "Subscription Auto-Renewal",
-    "description": "Wants to enable auto-renewal but toggle is disabled in settings.",
-    "status": "In-Progress",
+    "description": "Customer wants to enable auto-renewal for their subscription but the toggle in settings is disabled. They are worried about missing their next billing cycle.",
+    "customer": "Liam Thomas",
     "priority": "MEDIUM PRIORITY",
-    "assignee": "Liam Thomas",
-    "date": "01/23/2024"
+    "status": "In-Progress",
+    "createdAt": "2024-01-23"
   },
   {
     "id": 1010,
     "title": "Missing Order Confirmation Email",
-    "description": "Order placed successfully but no confirmation email received.",
-    "status": "Open",
+    "description": "After successfully placing an order the customer has not received any confirmation email. This is causing uncertainty about the order status.",
+    "customer": "Isabella Garcia",
     "priority": "LOW PRIORITY",
-    "assignee": "Isabella Garcia",
-    "date": "01/24/2024"
+    "status": "Open",
+    "createdAt": "2024-01-24"
   },
   {
     "id": 1011,
     "title": "Coupon Not Applying at Checkout",
-    "description": "Valid coupon shows 'expired' message for multiple users.",
-    "status": "Open",
+    "description": "A valid coupon code shows 'expired' error at checkout for multiple users. They are unable to apply the discount even after clearing cache.",
+    "customer": "Noah Walker",
     "priority": "MEDIUM PRIORITY",
-    "assignee": "Noah Walker",
-    "date": "01/25/2024"
+    "status": "Open",
+    "createdAt": "2024-01-25"
   },
   {
     "id": 1012,
     "title": "Slow Dashboard Loading",
-    "description": "Dashboard takes over 15 seconds to load during peak hours.",
-    "status": "In-Progress",
+    "description": "Dashboard takes over 15 seconds to load during peak hours. Performance issue affects reporting modules and prevents timely analysis.",
+    "customer": "Ava Robinson",
     "priority": "MEDIUM PRIORITY",
-    "assignee": "Ava Robinson",
-    "date": "01/26/2024"
+    "status": "In-Progress",
+    "createdAt": "2024-01-26"
   },
   {
     "id": 1013,
     "title": "Shipping Address Not Saved",
-    "description": "Address form resets after clicking 'Save & Continue'.",
-    "status": "Open",
+    "description": "Address form resets after clicking 'Save & Continue' resulting in lost data. Customer cannot proceed with checkout until address persists.",
+    "customer": "William Perez",
     "priority": "HIGH PRIORITY",
-    "assignee": "William Perez",
-    "date": "01/27/2024"
+    "status": "Open",
+    "createdAt": "2024-01-27"
   },
   {
     "id": 1014,
     "title": "Export to CSV Produces Empty File",
-    "description": "Report export returns an empty CSV despite visible data.",
-    "status": "Open",
+    "description": "Report export returns an empty CSV file even though the UI shows data. This prevents customers from analyzing or sharing reports offline.",
+    "customer": "Mia Thompson",
     "priority": "LOW PRIORITY",
-    "assignee": "Mia Thompson",
-    "date": "01/28/2024"
+    "status": "Open",
+    "createdAt": "2024-01-28"
   }
 ]
