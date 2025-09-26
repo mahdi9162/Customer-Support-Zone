@@ -6,3 +6,24 @@ body {
   height: 100vh;
   font-family: 'Poppins', sans-serif;
 }
+/* NavBar */
+.navStyleAnchor {
+  @apply px-3 py-1 rounded-md 
+           transition-colors duration-300 
+           group-hover:bg-purple-100;
+}
+
+.navStyleSpan {
+  @apply text-gray-700 
+             transition-colors duration-300 
+             group-hover:bg-clip-text group-hover:text-transparent 
+             group-hover:bg-gradient-to-r group-hover:from-purple-500 group-hover:to-pink-500;
+}
+
+.navBtn {
+  @apply flex items-center gap-2
+        px-2 md:px-5 py-2 rounded-md font-semibold text-white
+         bg-gradient-to-r from-[#8A3FFF] to-[#7c3af5bb]
+         hover:from-[#7B3AF5] hover:to-[#5F2ED4]
+         transition-colors text-sm md:text-base;
+}
