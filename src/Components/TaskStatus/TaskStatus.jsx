@@ -17,7 +17,7 @@ const TaskStatus = ({ issues, completeData }) => {
       return (
         <div className="flex flex-col items-center my-8">
           <p className="text-gray-500 font-semibold">No Tasks In Progress!</p>
-          <p className="text-gray-400">Click on a ticket to start working 😉</p>
+          <p className="text-gray-400 text-sm md:text-base">Click on a ticket to start working 😉</p>
         </div>
       );
     } else {

@@ -46,7 +46,7 @@ const TicketsCards = ({ issue, handleCardProgress }) => {
           </p>
         </div>
         <p className="text-sm text-[#627382] flex-1 my-3 line-clamp-3">{description}</p>
-        <div className="mt-2 md:flex justify-between">
+        <div className="mt-1.5 space-y-2 md:flex justify-between">
           <div className="flex items-center justify-between md:justify-baseline gap-4">
             <p className="text-sm text-[#627382]">#{id}</p>
             <p className={`text-sm  ${getPriorityColor(priority)}`}>{priority}</p>

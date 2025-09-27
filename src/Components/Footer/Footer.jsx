@@ -10,13 +10,13 @@ const Footer = () => {
     <>
       <footer className="bg-black mt-10 md:mt-20">
         <Container>
-          <div className="py-10 md:py-20 text-white px-3 grid md:grid-cols-6 ">
+          <div className="py-10 md:py-20 text-white px-3 grid grid-cols-1 md:grid-cols-6 ">
             {/* Div 1 */}
-            <div className="w-96 col-span-2 mb-5 md:mb-0">
-              <h2 className="text-2xl font-bold mb-2 text-center md:text-start">
+            <div className="md:col-span-2 mb-5 md:mb-0">
+              <h2 className="text-xl md:text-2xl font-bold mb-2 text-center md:text-start">
                 SupportHub <span className="text-lg">- Ticket System</span>
               </h2>
-              <p className="text-[#a1a1aa] text-sm text-justify">
+              <p className="md:w-96 text-[#a1a1aa] text-sm text-justify">
                 SupportHub — Ticket System is a modern customer-support and ticket-tracking platform that helps teams manage and resolve
                 issues faster. From login problems to billing queries, SupportHub keeps every request organized in one place and makes it
                 easy for customers to get timely help.
@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
             {/* Div 2 */}
             <div className="mb-5">
-              <h2 className="text-lg font-bold mb-2">Company</h2>
+              <h2 className="md:text-lg font-bold mb-2">Company</h2>
               <ul className="space-y-2 text-[#a1a1aa] text-sm">
                 <li className="footerLink cursor-pointer w-fit">About Us</li>
                 <li className="footerLink cursor-pointer w-fit">Our Mission</li>
@@ -32,8 +32,8 @@ const Footer = () => {
               </ul>
             </div>
             {/* Div 3 */}
-            <div className="">
-              <h2 className="text-lg font-bold mb-2">Services</h2>
+            <div className="mb-5">
+              <h2 className="md:text-lg font-bold mb-2">Services</h2>
               <ul className="space-y-2 text-[#a1a1aa] text-sm">
                 <li className="footerLink cursor-pointer w-fit">Products & Services</li>
                 <li className="footerLink cursor-pointer w-fit">Customer Stories</li>
@@ -41,8 +41,8 @@ const Footer = () => {
               </ul>
             </div>
             {/* Div 4 */}
-            <div className="">
-              <h2 className="text-lg font-bold mb-2">Information</h2>
+            <div className="mb-5">
+              <h2 className="md:text-lg font-bold mb-2">Information</h2>
               <ul className="space-y-2 text-[#a1a1aa] text-sm">
                 <li className="footerLink cursor-pointer w-fit">Privacy Policy</li>
                 <li className="footerLink cursor-pointer w-fit">Terms & Conditions</li>
@@ -50,8 +50,8 @@ const Footer = () => {
               </ul>
             </div>
             {/* Div 5 */}
-            <div className="">
-              <h2 className="text-lg font-bold mb-2">Social Links</h2>
+            <div>
+              <h2 className="md:text-lg font-bold mb-2">Social Links</h2>
               <ul className="space-y-2 text-[#a1a1aa] text-sm">
                 <li className="flex items-center gap-2 cursor-pointer w-fit group">
                   <TiSocialTwitter size={20} />

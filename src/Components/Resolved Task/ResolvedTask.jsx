@@ -30,8 +30,8 @@ const ResolvedTask = ({ issues, removeData }) => {
       >
         <h1 className="text-start mb-4 font-semibold text-lg md:text-xl px-3 md:px-0">Resolved Task</h1>
         <div className={`flex flex-col items-center my-8 ${showResolvedTask()}`}>
-          <p className="text-gray-500 font-semibold">No Completed Tasks Found!</p>
-          <p className="text-gray-400">Tasks you finish will appear in this list 😇</p>
+          <p className="text-gray-500 font-semibold ">No Completed Tasks Found!</p>
+          <p className="text-gray-400 text-sm md:text-base">Tasks you finish will appear in this list 😇</p>
         </div>
         {resolvedData.map((item) => (
           <div key={item.id} className="mt-3 p-4 bg-[#bbdce568] rounded-xl">
