@@ -4,7 +4,8 @@ import './App.css';
 import Container from './Components/Container/Container';
 import CsTickets from './Components/CsTickets/CsTickets';
 import Navbar from './Components/Navbar/Navbar';
-import Footer from './Components/Container/Footer/Footer';
+import Footer from './Components/Footer/Footer';
+
 
 const fetchData = async () => {
   const res = await fetch('/tickets.json');

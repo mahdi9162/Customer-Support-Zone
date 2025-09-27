@@ -1,9 +1,9 @@
 import React from 'react';
-import Container from '../Container';
 import { TiSocialTwitter } from 'react-icons/ti';
 import { TiSocialLinkedinCircular } from 'react-icons/ti';
 import { TiSocialFacebookCircular } from 'react-icons/ti';
 import { CgMail } from 'react-icons/cg';
+import Container from '../Container/Container';
 
 const Footer = () => {
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="py-10 md:py-20 text-white px-3 grid md:grid-cols-6 ">
             {/* Div 1 */}
             <div className="w-96 col-span-2 mb-5 md:mb-0">
-              <h2 className="text-2xl font-bold mb-2 text-center md:text-base">
+              <h2 className="text-2xl font-bold mb-2 text-center md:text-start">
                 SupportHub <span className="text-lg">- Ticket System</span>
               </h2>
               <p className="text-[#a1a1aa] text-sm text-justify">
@@ -98,7 +98,7 @@ const Footer = () => {
           </div>
 
           <div className="py-5 md:py-7 border-t">
-            <p className="text-[#fafafa] text-sm text-center">
+            <p className="text-[#fafafa] text-sm text-center ">
               © 2025 SupportHub — Ticket System. <span className="block md:inline-block">All rights reserved.</span>
             </p>
           </div>
