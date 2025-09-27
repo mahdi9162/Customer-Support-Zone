@@ -1,8 +1,10 @@
+import { ToastContainer } from 'react-toastify';
 import { Suspense } from 'react';
 import './App.css';
 import Container from './Components/Container/Container';
 import CsTickets from './Components/CsTickets/CsTickets';
 import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Container/Footer/Footer';
 
 const fetchData = async () => {
   const res = await fetch('/tickets.json');
@@ -18,6 +20,8 @@ function App() {
       <Suspense fallback={'Loading...'}>
         <CsTickets thePromise={thePromise}></CsTickets>
       </Suspense>
+      <Footer></Footer>
+      <ToastContainer />
     </>
   );
 }

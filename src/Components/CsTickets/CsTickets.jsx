@@ -11,14 +11,34 @@ const CsTickets = ({ thePromise }) => {
   const [issues, setIssues] = useState(issuesData);
 
   const handleCardProgress = (clickData) => {
-    const changeData = issues.map((issue) => {
+    if (clickData.status !== 'Open') {
+      return;
+    }
+    const progressData = issues.map((issue) => {
       if (issue.id === clickData.id) {
-        return { ...clickData, status: 'In-Progress' };
+        return { ...issue, status: 'In-Progress', statusChangedAt: new Date() };
       } else {
         return issue;
       }
     });
-    setIssues(changeData);
+    setIssues(progressData);
+  };
+
+  // Complete Data
+  const completeData = (compData) => {
+    const resolvedData = issues.map((issue) => {
+      if (issue.id === compData.id) {
+        return { ...compData, status: 'Resolved' };
+      } else {
+        return issue;
+      }
+    });
+    setIssues(resolvedData);
+  };
+
+  const removeData = (data) => {
+    const otherData = issues.filter((ele) => ele.id !== data.id);
+    setIssues(otherData);
   };
 
   return (
@@ -29,14 +49,16 @@ const CsTickets = ({ thePromise }) => {
         <div className="flex flex-col-reverse md:flex-row gap-6">
           <div className="px-3 md:px-0 md:w-2/3">
             <div className="grid md:grid-cols-2 gap-4">
-              {issues.map((issue) => {
-                return <TicketsCards key={issue.id} issue={issue} handleCardProgress={handleCardProgress}></TicketsCards>;
-              })}
+              {issues
+                .filter((issue) => issue.status !== 'Resolved')
+                .map((issue) => {
+                  return <TicketsCards key={issue.id} issue={issue} handleCardProgress={handleCardProgress}></TicketsCards>;
+                })}
             </div>
           </div>
           <div className="md:w-1/3 px-3 md:px-0">
-            <TaskStatus></TaskStatus>
-            <ResolvedTask></ResolvedTask>
+            <TaskStatus issues={issues} completeData={completeData}></TaskStatus>
+            <ResolvedTask issues={issues} removeData={removeData}></ResolvedTask>
           </div>
         </div>
       </Container>
