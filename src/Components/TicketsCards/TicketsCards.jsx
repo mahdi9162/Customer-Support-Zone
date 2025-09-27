@@ -24,16 +24,15 @@ const TicketsCards = ({ issue, handleCardProgress }) => {
     <>
       <div
         onClick={() => handleCard(issue)}
-        className="h-full flex flex-col p-4 shadow-md rounded-xl bg-white border border-zinc-200 transition-all duration-500 ease-in-out
-  hover:-translate-y-[1px]
-  hover:ring-2 hover:ring-cyan-300/60 hover:ring-offset-2 hover:ring-offset-white
-  hover:shadow-[0_10px_25px_-10px_rgba(56,189,248,.35),0_12px_30px_-12px_rgba(16,185,129,.25)]
-"
-      >
+        className="h-full flex flex-col p-3 md:p-4 shadow-md rounded-xl bg-white border border-zinc-200 transition-all duration-500 ease-in-out
+        hover:-translate-y-[1px]
+        hover:ring-2 hover:ring-cyan-300/60 hover:ring-offset-2 hover:ring-offset-white
+        hover:shadow-[0_10px_25px_-10px_rgba(56,189,248,.35),0_12px_30px_-12px_rgba(16,185,129,.25)]
+        ">
         <div className="flex justify-between items-center">
           <h2 className="font-semibold text-sm md:text-base">{title}</h2>
           <p
-            className={`py-1 px-3 rounded-2xl text-sm flex items-center gap-1 ${
+            className={`py-1 px-2 md:px-3 text-nowrap rounded-2xl text-sm flex items-center gap-1 ${
               status === 'Open' ? 'bg-[#B9F8CF]' : status === 'In-Progress' ? 'bg-[#F8F3B9]' : 'bg-teal-100'
             }`}
           >
