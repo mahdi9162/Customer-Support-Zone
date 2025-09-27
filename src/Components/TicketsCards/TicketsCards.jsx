@@ -36,7 +36,7 @@ const TicketsCards = ({ issue, handleCardProgress }) => {
             <p className="text-sm text-[#627382]">#{id}</p>
             <p className={`text-sm  ${getPriorityColor(priority)}`}>{priority}</p>
           </div>
-          <div className="flex mt-2 justify-between md:justify-baseline">
+          <div className="flex justify-between md:justify-baseline">
             <div className="flex items-center gap-1">
               <CgProfile color="#627382" size={18} />
               <p className="text-sm text-[#627382] mr-4">{customer}</p>

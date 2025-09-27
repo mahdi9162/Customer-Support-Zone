@@ -1,10 +1,10 @@
 import React, { use } from 'react';
 import Container from '../Container/Container';
-
 import TicketsCards from '../TicketsCards/TicketsCards';
 import TaskStatus from '../TaskStatus/TaskStatus';
 import ResolvedTask from '../Resolved Task/ResolvedTask';
 import { useState } from 'react';
+import OutputBox from '../OutputBox/OutputBox';
 
 const CsTickets = ({ thePromise }) => {
   const issuesData = use(thePromise);
@@ -24,6 +24,7 @@ const CsTickets = ({ thePromise }) => {
   return (
     <>
       <Container>
+        <OutputBox issues={issues}></OutputBox>
         <h1 className="text-start mb-4 font-semibold text-xl md:text-2xl px-3 md:px-0">Customer Tickets</h1>
         <div className="flex flex-col-reverse md:flex-row gap-6">
           <div className="px-3 md:px-0 md:w-2/3">
